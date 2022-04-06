@@ -2,15 +2,17 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Free money - SUCESS! </title>
+    <title>Free money </title>
     <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
 </head>
 <body>
-<!-- If the email is correct - the system will show this:  -->
+<!-- TODO User should be able to submit data -->
 <section class="content">
-    <h1>🤑 Sucess! 🤑</h1>
-    <h> You'll recieve an email shortly... </h>
+    <h1>INVALID EMAIL! 🤯</h1>
     <form method="POST" action="/test">
+        <h> Please try again:</h>
+        <input id="email" type="text" name="email"/>
+        <input type="submit">
     </form>
 </section>
 </body>

@@ -16,6 +16,7 @@ public class IndexController {
         return "index";
     }
 
+    //Save to DataBase
     @PostMapping("/test")
     public String test(WebRequest dataFromForm){
         System.out.println(dataFromForm.getParameter("email"));
